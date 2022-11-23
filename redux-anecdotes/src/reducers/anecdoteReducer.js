@@ -38,4 +38,14 @@ const reducer = (state = initialState, action) => {
   }
 }
 
+export const newAnecdote = content => ({
+  type: 'NEW',
+  data: { content }
+})
+
+export const incrementAnecdote = id => ({
+  type: 'INCREMENT',
+  data: { id }
+})
+
 export default reducer
