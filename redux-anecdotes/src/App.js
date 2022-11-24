@@ -1,10 +1,13 @@
+import Filter from './components/Filter'
 import ListAnecdotes from './components/ListAnecdotes'
 import NewAnecdote from './components/NewAnecdotes'
+import Notification from './components/Notification'
 
 const App = () => {
   return (
     <div>
-      <h2>Anecdotes</h2>
+      <Filter />
+      <Notification />
       <NewAnecdote />
       <ListAnecdotes />
     </div>
